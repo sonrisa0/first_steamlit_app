@@ -32,5 +32,8 @@ streamlit.text(fruityvice_response.json()) #just writes the ata to the screen
 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
+streamlit.dataframe(fruityvice_normalized)
+
+
 
 
