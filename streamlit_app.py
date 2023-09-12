@@ -69,13 +69,13 @@ if streamlit.button('Get Fruit Load List'):
     my_data_row = get_fruit_load_list()
     streamlit.dataframe(my_data_row)
 
-my_data_row = my_cur.fetchone() 
-streamlit.dataframe(my_data_row)
+#my_data_row = my_cur.fetchone() 
+#streamlit.dataframe(my_data_row)
 
-my_cur.execute("select * from fruit_load_list") 
+#my_cur.execute("select * from fruit_load_list") 
 
-streamlit.header("the fruit load list contains:") 
-streamlit.dataframe(my_data_rows)
+#streamlit.header("the fruit load list contains:") 
+#streamlit.dataframe(my_data_rows)
 
 #Allow the end user to add a fruit to the list 
 add_my_fruit = streamlit.text_input('What fruit to you want to add to the list')
